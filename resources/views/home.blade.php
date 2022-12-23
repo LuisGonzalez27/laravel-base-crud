@@ -5,8 +5,16 @@
 @endsection
 
 @section('countdown')
-<div id="timer" class="countdown-xmass"></div> 
+<div class="countdown-xmass text-center">
+  <h1 class="text-uppercase text-white fw-bold ctndwn">time to x-mass</h1>
+  <div id="timer" ></div> 
+  <div class=" mt-5 text-white">
+    <a href="{{route('gifts.index')}}" class="btn effect04" data-sm-link-text="CLICK" target="_blank"><span class=" fw-bold">HOVER</span></a>
+  </div>
+</div>
+
 @endsection
+
 
 <script>
     function updateTimer() {
