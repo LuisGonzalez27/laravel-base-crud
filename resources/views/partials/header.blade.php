@@ -16,7 +16,7 @@
                     <a class="nav-link text-white hover-underline-animation" href="{{route('gifts.index')}}">Lista Regali</a>
                     </li>
                     <li class="nav-item pe-3">
-                    <a class="nav-link text-white hover-underline-animation" href="{{route('gifts.create')}}">Inserisci un regalo</a>
+                    <a class="nav-link text-white hover-underline-animation" href="{{route('gifts.create')}}">Aggiungi spedizione</a>
                     </li>
                 </ul>
             </div>

@@ -6,10 +6,10 @@
 
 @section('countdown')
 <div class="countdown-xmass text-center">
-  <h1 class="text-uppercase text-white fw-bold ctndwn">time to x-mass</h1>
+  <h1 class="text-uppercase text-white fw-bold ctndwn">time to x-mass:</h1>
   <div id="timer" ></div> 
   <div class=" mt-5 text-white">
-    <a href="{{route('gifts.index')}}" class="btn effect04" data-sm-link-text="CLICK" target="_blank"><span class=" fw-bold">HOVER</span></a>
+    <a href="{{route('gifts.index')}}" class="btn effect04" data-sm-link-text="CLICK" target="_blank"><span class=" fw-bold">GO TO GIFTS</span></a>
   </div>
 </div>
 
@@ -41,4 +41,3 @@
   }
   setInterval('updateTimer()', 1000 );
 </script>
-

@@ -1,21 +1,26 @@
 @import '~bootstrap/scss/bootstrap';
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&family=Titan+One&display=swap%27');
 
 
+//style general
+main {
+    height: 100vh;
+}
 
-// general
 img {
     max-width: 100%;
 }
+
 a {
     text-decoration: none;
 }
+
 .container-hf {
     padding: 0 60px;
 }
 
-//  header
-header{
+//style header
+header {
     width: 100%;
     height: 82px;
     background-color: transparent;
@@ -27,41 +32,57 @@ header{
         width: 60px;
     }
 
-    
-        a {
-            font-size: 15px;
-        }
-       
-        .hover-underline-animation {
-            display: inline-block;
-            position: relative;
-            color: rgba(255, 255, 255, 0.755);
-            cursor: pointer;
-            font-size: 20px;
-          }
-          
-          .hover-underline-animation:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            transform: scaleX(0);
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: rgba(255, 255, 255, 0.75);
-            transform-origin: bottom right;
-            transition: transform 0.25s ease-out;
-          }
-          
-          .hover-underline-animation:hover:after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-          }
-    
+    a {
+        font-size: 15px;
+    }
+
+    .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: rgba(255, 255, 255, 0.755);
+        cursor: pointer;
+        font-size: 20px;
+      }
+      
+      .hover-underline-animation:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.75);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      
+      .hover-underline-animation:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
 }
 
-// snow flakes
-/* ---- reset ---- */ body{ margin:0; font-family: 'Raleway', sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #b61924; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
+//style home
+
+// home - snow flakes
+
+/* ---- reset ---- */ 
+body{ margin:0; font:'Raleway', sans-serif; } 
+canvas{ display: block; vertical-align: bottom; } 
+
+/* ---- particles.js container ---- */ 
+#particles-js{ position:absolute; width: 100%; height: 100%; background-color: #b61924; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } 
+
+/* ---- stats.js ---- */ 
+.count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } 
+
+.js-count-particles{ font-size: 1.1em; } #stats, 
+
+.count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } 
+#stats{ border-radius: 3px 3px 0 0; overflow: hidden; } 
+.count-particles{ border-radius: 0 0 3px 3px; }
 
 
 // sezioni yield content in absolute sopra a snow
@@ -75,68 +96,8 @@ header{
     padding-top: 100px;
 }
 
-// section santa's list
-.outer-container-cards{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 60px;
-    overflow-x: auto;
-    
-    .cards-container {
-        width: 100%;
-        display: flex;
-        overflow-x: auto;
-    }
-}
+// home - countdown
 
-// single card show
-.single-card-text{
-    display: flex;
-    flex-direction: column;
-}
-
-// footer
-footer {
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    backdrop-filter: blur(15px);
-    color: white;
-
-    .container-hf {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-
-        #logo-footer {
-            width: 60px;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        p {
-            margin: 0;
-        }
-
-        a {
-            color: white;
-            font-size: 25px;
-            transition: 0.8s;
-
-            &:hover{
-                color: black;
-            }
-        }
-    } 
-}
-
-// countdown
 .ctndwn{
     font-family: 'Titan One', cursive;
     font-size: 70px;
@@ -176,7 +137,7 @@ footer {
   }
 
 
-// bottone home
+// button home
 
 .btn {
     text-shadow: 0 0 20px #f5e370;
@@ -200,6 +161,7 @@ footer {
     display: var(--uismLinkDisplay);
     color: rgb(255, 255, 255);
     outline: solid  2px rgb(255, 255, 255);
+    
     position: relative;
     transition-duration: 0.4s;
     overflow: hidden;
@@ -244,13 +206,148 @@ footer {
   }
   
 
-//   sezione show
+//section santa's list
+.outer-container-cards {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+    overflow-x: auto;
+    
+    .cards-container {
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+    }
+}  
+
+// single card show
+.single-card-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-card-container{
+  width: 100%;
+  height: 200px;
+
+  img{
+      padding-top: 20px;
+      transform: scale(0.8);
+  }
+}
+
+.nome{
+  font-family: 'Titan One', cursive;
+  color: #e62222;;
+
+}
+
+//carousel
+
+#box {
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto; 
+    padding-bottom: 40px;
+}
+
+.crsl-button {
+    position: absolute;
+    z-index: 1000;
+    height: 50px;
+    width: 50px;
+    top: 45%;
+    transform: translate(-0%, -50%);
+    background-color: transparent;
+    border-style: none;
+
+    i {
+        font-size: 45px;
+        color: white;
+    }
+  }
+
+.left-btn {
+    left: 0;
+}
+
+.right-btn {
+    right: 0;
+}
+   
+
+// Custom scrollbar
+// Scrollbar 
+::-webkit-scrollbar {
+    height: 5px;
+}
+ 
+// Track 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #b61924; 
+    width: 5px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+ 
+// Handle 
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background-image: url(../img/candy-cane-01.png); 
+    background-size: cover; 
+    width: 5px;
+    background-repeat: no-repeat;
+}
 
 
+// footer
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    color: white;
 
+    .container-hf {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
 
-// bottone delete show
+        #logo-footer {
+            width: 60px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: white;
+            font-size: 25px;
+            transition: 0.8s;
+
+            &:hover{
+                color: black;
+            }
+        }
+    }
+}
+
+// style show#
+.details-container {
+  position: absolute;
+}
+
+// button delete show
 
 .noselect {
     -webkit-touch-callout: none;
@@ -263,8 +360,8 @@ footer {
   }
 
 .delete {
-	width: 150px;
-	height: 50px;
+	width: 140px;
+	height: 40px;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -288,9 +385,9 @@ footer {
 .delete .icon {
 	position: absolute;
 	border-left: 1px solid #c41b1b;
-	transform: translateX(110px);
-	height: 40px;
-	width: 40px;
+	transform: translateX(100px);
+	height: 30px;
+	width: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -310,11 +407,45 @@ footer {
 }
 
 .delete:hover .icon {
-	width: 150px;
+	width: 140px;
 	border-left: none;
 	transform: translateX(0);
 }
 
 .delete:focus {
 	outline: none;
+}
+
+// button modifica
+.modify-btn {
+  width: 140px;
+	height: 40px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	background: green;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  color: white;
+	font-weight: bold;
+  padding-left: 40px;
+}
+
+
+// sezione create
+
+.form-container{
+    text-align: center;
+    padding: 20px 0;
+
+    .submit-btn{
+    background-color: green;
+    color: #ffffff;
+    font-weight: bold;
+
+    &:hover{
+        opacity: 0.9;
+    }
+    }
 }
